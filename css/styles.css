@@ -179,14 +179,12 @@ button {
 /* <-----------SECTION HERO-------------> */
 
 .hero {
-  background-color: var(--first-section-color);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .hero > .container {
-  max-width: 1600px;
   width: 1600px;
   height: 600px;
   display: flex;
@@ -194,6 +192,7 @@ button {
   align-items: center;
   justify-content: center;
 
+  background-color: var(--first-section-color);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
