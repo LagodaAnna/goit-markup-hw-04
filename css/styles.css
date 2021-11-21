@@ -12,6 +12,8 @@
   --team-border: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --portfolio-border: #eeeeee;
+  --main-icon-color: #afb1b8;
+  --footer-icon-bg: rgba(255, 255, 255, 0.1);
   --set-margin-card: 30px;
 }
 
@@ -99,6 +101,7 @@ button {
 
 .navigation {
   display: flex;
+  margin-right: auto;
 }
 
 .logo {
@@ -148,7 +151,6 @@ button {
 
 .header-address-list {
   display: flex;
-  margin-left: auto;
 }
 
 .header-address-item > .link {
@@ -178,6 +180,17 @@ button {
 
 .hero {
   background-color: var(--first-section-color);
+}
+
+.hero > .container {
+  max-width: 1600px;
+  width: 1600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -186,15 +199,6 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.hero > .container {
-  max-width: 1600px;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .hero-title {
@@ -229,7 +233,7 @@ button {
 .thumb {
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--secondary-section-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,7 +352,7 @@ button {
 }
 
 .team-social-link {
-  color: #afb1b8;
+  color: var(--main-icon-color);
 }
 
 .social-icon {
@@ -382,9 +386,9 @@ button {
   justify-content: center;
   width: 100%;
   height: 100%;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--main-icon-color);
   border-radius: 4px;
-  color: #afb1b8;
+  color: var(--main-icon-color);
 }
 
 .client-item-link:hover,
@@ -456,7 +460,7 @@ button {
 
 .footer-social-link {
   color: var(--main-page-color);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--footer-icon-bg);
 }
 
 .footer-social-link:hover,
@@ -488,7 +492,6 @@ button {
   background: var(--secondary-section-color);
   border-radius: 4px;
   border: none;
-
   padding: 6px 22px;
 }
 
@@ -505,7 +508,10 @@ button {
   flex-basis: calc(100% / 3 - var(--set-margin-card));
 }
 
-/*<------------------- НЕ РАБОТАЕТ -------------------------->*/
+.example-link {
+  display: block;
+}
+
 .example-link:hover,
 .example-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -514,7 +520,6 @@ button {
 
 .example-caption {
   padding: 20px 24px;
-
   background-color: var(--main-page-color);
   border-right: 1px solid var(--portfolio-border);
   border-left: 1px solid var(--portfolio-border);
@@ -538,9 +543,11 @@ button {
 .current-btn {
   background-color: var(--accent-color);
   color: var(--main-page-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* <-----------HOVER FOCUS-----------> */
+/* <-----------HOVER FOCUS GENERAL-----------> */
 .choice-link:hover,
 .choice-link:focus {
   color: var(--accent-color);
@@ -550,6 +557,8 @@ button {
 .choice-btn:focus {
   background-color: var(--accent-color);
   color: var(--main-page-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .hero-button:hover,
